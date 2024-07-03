@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.model;
 
-public class Filme extends Titulo{
+public  class Filme extends Titulo{
     private String Diretor;
 
     public String getDiretor() {
@@ -10,4 +10,5 @@ public class Filme extends Titulo{
     public void setDiretor(String diretor) {
         Diretor = diretor;
     }
+
 }
