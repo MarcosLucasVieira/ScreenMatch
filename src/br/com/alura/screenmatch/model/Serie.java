@@ -42,4 +42,6 @@ public class Serie extends Filme {
     public int getDuracaoEmMin() {
         return temporadas * epsodioPorTemporada * minutosPorEpsodio;
     }
+
+
 }
