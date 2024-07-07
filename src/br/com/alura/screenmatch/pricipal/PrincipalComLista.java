@@ -6,7 +6,9 @@ import br.com.alura.screenmatch.model.Titulo;
 
 import java.util.ArrayList;
 
-public class PrincipalComLista {
+import java.util.Collections;
+
+public class PrincipalComLista  {
     public static void main(String[] args) {
         Filme meuFilme = new Filme("Poderoso Chefão", 1970);
         Serie lost = new Serie("Lost", 2000);
@@ -28,6 +30,15 @@ public class PrincipalComLista {
             }
         }
 
+        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Adam Sandler");
+        buscaPorArtista.add("Marcos");
+        buscaPorArtista.add("Erick");
+        Collections.sort(buscaPorArtista);
+        System.out.println(buscaPorArtista);
 
+        Collections.sort(listaDeAssistidos);
+        System.out.println(listaDeAssistidos);
     }
+
 }
