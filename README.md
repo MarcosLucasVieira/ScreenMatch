@@ -1,5 +1,5 @@
 # ScreenMatch
-Este é um projeto que desevolvi junto com o curso de programação orientada a objeto em java, da Escolad e programação da alura
+Este é um projeto que desenvolvi junto com o curso de programação orientada a objeto em java, da Escola de programação da alura
 ## Índice
 
 1. [Pré-requisitos](#pré-requisitos)
