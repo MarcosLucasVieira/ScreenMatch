@@ -4,9 +4,7 @@ import br.com.alura.screenmatch.model.Filme;
 import br.com.alura.screenmatch.model.Serie;
 import br.com.alura.screenmatch.model.Titulo;
 
-import java.util.ArrayList;
-
-import java.util.Collections;
+import java.util.*;
 
 public class PrincipalComLista  {
     public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class PrincipalComLista  {
         Filme outrofilme = new Filme("Avatar", 2023);
         Filme filmeMarcos = new Filme("Dogville", 2003);
 
-        ArrayList<Titulo> listaDeAssistidos = new ArrayList<>();
+        List<Titulo> listaDeAssistidos = new LinkedList<>();
         listaDeAssistidos.add(filmeMarcos);
         filmeMarcos.avalia(10);
         listaDeAssistidos.add(meuFilme);
@@ -30,7 +28,7 @@ public class PrincipalComLista  {
             }
         }
 
-        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        List<String> buscaPorArtista = new LinkedList<>();
         buscaPorArtista.add("Adam Sandler");
         buscaPorArtista.add("Marcos");
         buscaPorArtista.add("Erick");
@@ -38,6 +36,10 @@ public class PrincipalComLista  {
         System.out.println(buscaPorArtista);
 
         Collections.sort(listaDeAssistidos);
+        System.out.println(listaDeAssistidos);
+
+        listaDeAssistidos.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("Ordenando por ano");
         System.out.println(listaDeAssistidos);
     }
 
